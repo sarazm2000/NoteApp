@@ -108,15 +108,44 @@ textarea:focus{
   align-items: center;
   background-color: rgb(233, 233, 233);
   border-radius: 10px;
-  padding: 5px;
   margin-bottom: 1.5em;
+  padding: .5rem;
+}
+
+.search-icon {
+  padding-left: .3rem;
+  color: var(--save);
 }
 
 .search input {
   border: none;
   background-color: rgb(233, 233, 233);
+  padding-left: .7em;
 }
 
 .search input:focus {
   outline: none;;
+}
+
+.save-icon {
+  color: var(--save);
+  cursor: pointer;
+}
+
+.save-icon:hover {
+  color: var(--saveHover);
+  
+}
+
+.mode {
+  cursor: pointer;
+}
+
+.AddButton {
+  color: var(--save);
+  cursor: pointer;
+}
+
+.AddButton:hover {
+  color: var(--saveHover);
 }

@@ -1,13 +1,17 @@
 import React from "react";
+import {MdDarkMode} from 'react-icons/md';
+import {MdAddCircle} from 'react-icons/md';
 
 const Header = ({handleToggleDarkMode}) => {
 
     return (
         <div className="header">
-            <h1>Keep your Notes</h1>
-            <button onClick={() => handleToggleDarkMode (
+            <h1>Notes</h1>
+            
+            <MdDarkMode onClick={() => handleToggleDarkMode(
                 (previousDarkMode) => !previousDarkMode
-            )} className="save">Mode</button>
+            )} 
+                className='mode' size = "1.5em"/>
         </div>
     );
 }

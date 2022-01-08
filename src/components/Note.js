@@ -1,4 +1,4 @@
-import { MdDeleteForever } from 'react-icons/md';
+import { RiDeleteBin5Line } from 'react-icons/ri';
 
 const Note = ({id, text, date, handleDeleteNote}) => {
     return (
@@ -6,7 +6,7 @@ const Note = ({id, text, date, handleDeleteNote}) => {
             <span>{text}</span>
             <div className="note-footer">
                 <small>{date}</small>
-                <MdDeleteForever onClick={()=> handleDeleteNote(id)} 
+                <RiDeleteBin5Line onClick={()=> handleDeleteNote(id)} 
                 className='delete-icon' size= '1.3em'/>
             </div>
         </div>

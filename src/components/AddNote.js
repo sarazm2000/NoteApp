@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import {BsFillCheckCircleFill} from 'react-icons/bs';
 
 const AddNote = ({handleAddNote}) => {
     const [noteText, setNoteText] = useState('');
@@ -18,8 +19,9 @@ const AddNote = ({handleAddNote}) => {
         placeholder="type to add a note..."
         onChange={handleChange}></textarea>
         <div className="note-footer">
-            <small>200 remaining</small>
-            <button className="save" onClick={handleSaveClick}>Save</button>
+            {/* <button className="save" onClick={handleSaveClick}>Save</button> */}
+            <BsFillCheckCircleFill onClick={handleSaveClick} 
+            className='save-icon' size = "1.3em"/>
         </div>
     </div>);
 };
