@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import {MdAddCircle} from 'react-icons/md';
+import { MdAddCircle } from 'react-icons/md';
 import AddNote from './AddNote';
 
 const AddButton = () => {
@@ -8,6 +8,7 @@ const AddButton = () => {
         size='1.6em'/>
     );
 };
+
 
 export default AddButton;
 
