@@ -1,13 +1,13 @@
 :root {
   --bg: #edf6f9;
-  --newNoteBg: #ffead2;
-  --noteBg: #ffddd2;
+  --newNoteBg: #cac1ca;
+  --noteBg: #9c6c8142;
   --noteHover: #fffdd2;
   --text: #000;
-  --save: #e29578;
-  --saveHover: #ff9578;
+  --save: #936a84;
+  --saveHover: #936a848f;
   --del: #ffddd2;
-  --darkBg: #212529;
+  --darkBg: #151827;
 }
 body {
   margin: 0;
@@ -25,6 +25,7 @@ code {
 }
 .dark-mode {
   background-color: var(--darkBg);
+  color: #eee;
 }
 
 .dark-mode h1 {
@@ -43,6 +44,10 @@ code {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.header svg {
+  color: #574564;
 }
 
 .notes-list{

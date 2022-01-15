@@ -1,6 +1,6 @@
 import NotesList from "./components/NotesList";
 import { nanoid } from 'nanoid';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Search from "./components/Search";
 import Header from "./components/Header";
 import AddButton from './components/AddButton';
@@ -16,6 +16,21 @@ const App = () => {
   const [darkMode, setDarkMode] = useState(false);
 
   const [addButton, setAddButton] = useState('');
+
+  useEffect(() => {
+    const savedNotes = JSON.parse(
+      localStorage.getItem('react-notes-app-data')
+    );
+    if (savedNotes) {
+      setNotes(savedNotes);
+    }
+  }, [])
+  useEffect(() => {
+    localStorage.setItem (
+      'react-notes-app-data', 
+      JSON.stringify(notes)
+    );
+  },[notes]);
 
   const addNote = (text) => {
     const newNote = {
