@@ -1,11 +1,11 @@
 :root {
   --bg: #edf6f9;
-  --newNoteBg: #cac1ca;
-  --noteBg: #9c6c8142;
+  --newNoteBg: #9c6c8142;
+  --noteBg: #9c6c810a;
   --noteHover: #fffdd2;
   --text: #000;
-  --save: #936a84;
-  --saveHover: #936a848f;
+  --save: #553d4c;
+  --saveHover: #9446778f;
   --del: #ffddd2;
   --darkBg: #151827;
 }
@@ -16,7 +16,24 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--bg);
+  /* background-color: var(--bg); */
+  background: url(../img/bg5.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  
+}
+
+body ::after {
+  background-color: #eee;
+  opacity: .4;
+}
+
+
+::selection {
+  /* color: #eee; */
+  background: var(--saveHover);
 }
 
 code {
@@ -24,11 +41,19 @@ code {
     monospace;
 }
 .dark-mode {
-  background-color: var(--darkBg);
-  color: #eee;
+  /* background-color: var(--darkBg); */
+  background: url(../img/bg1.png);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }
 
 .dark-mode h1 {
+  color: #fff;
+}
+
+.dark-mode textarea {
   color: #fff;
 }
 
@@ -63,7 +88,9 @@ code {
 textarea {
   border: none;
   resize: none;
-  background-color: var(--newNoteBg);
+  background-color: rgba(238, 238, 238, 0);
+  font-family: sans-serif;
+  font-size: 1em;
 }
 
 textarea:focus{
@@ -91,6 +118,13 @@ textarea:focus{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border: 3px #5745647c solid;
+  background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .note-footer {

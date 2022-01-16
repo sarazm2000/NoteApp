@@ -46,6 +46,7 @@ const App = () => {
     const newNotes = notes.filter((note)=> note.id !== id);
     setNotes(newNotes);
   }
+
  
   return (
     <div className={`${darkMode && "dark-mode"}`}>
