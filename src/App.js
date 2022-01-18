@@ -53,7 +53,6 @@ const App = () => {
        <div className="container">
     <Header handleToggleDarkMode = {setDarkMode}/>
     <Search handleSearchNote={setSearchText}/>
-    <AddButton />
     <NotesList notes={notes.filter((note) =>
      note.text.toLocaleLowerCase().includes(SearchText))} 
     handleAddNote={addNote}
