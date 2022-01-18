@@ -4,7 +4,7 @@
   --noteBg: #9c6c810a;
   --noteHover: #fffdd2;
   --text: #000;
-  --save: #553d4c;
+  --save: #b684a3;
   --saveHover: #9446778f;
   --del: #ffddd2;
   --darkBg: #151827;
@@ -17,7 +17,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background-color: var(--bg); */
-  background: url(../img/bg5.jpg);
+  background: url(../img/bg11.jpg);
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -30,6 +30,9 @@ body ::after {
   opacity: .4;
 }
 
+h1 {
+  color: #eee;
+}
 
 ::selection {
   /* color: #eee; */
@@ -40,9 +43,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+textarea {
+  color: #fff;
+}
 .dark-mode {
   /* background-color: var(--darkBg); */
-  background: url(../img/bg1.png);
+  background: url(../img/bg10.jpg);
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -72,7 +79,7 @@ code {
 }
 
 .header svg {
-  color: #574564;
+  color: #eee;
 }
 
 .notes-list{

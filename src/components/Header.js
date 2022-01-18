@@ -1,6 +1,8 @@
 import React from "react";
 import {MdDarkMode} from 'react-icons/md';
 import {MdAddCircle} from 'react-icons/md';
+import {IoIosColorPalette} from 'react-icons/io';
+
 
 const Header = ({handleToggleDarkMode}) => {
 
@@ -8,7 +10,7 @@ const Header = ({handleToggleDarkMode}) => {
         <div className="header">
             <h1>Notes</h1>
             
-            <MdDarkMode onClick={() => handleToggleDarkMode(
+            <IoIosColorPalette onClick={() => handleToggleDarkMode(
                 (previousDarkMode) => !previousDarkMode
             )} 
                 className='mode' size = "1.5em"/>
