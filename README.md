@@ -1,6 +1,6 @@
-# grpc_tutorial
+# Design a cache using Golang
 
-### In this tutorial, we build a basic API using gRPC and protobufs in Go
+### In this project, we build a basic CACHE using gRPC and protobufs in Go
 
 ## Run `go run main.go` to run the app, run `go build main.go` to build an executable file.
 
