@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import axios from 'axios';
 import "./App.css";
 import { useSpring, animated } from "react-spring";
+
 
 const App = () => {
   const [registrationFormStatus, setRegistartionFormStatus] = useState(false);
@@ -27,6 +29,12 @@ const App = () => {
   }
   function loginClicked() {
     setRegistartionFormStatus(false);
+  }
+
+  var componentDidMount = () => {
+    axios.get("/").then(respone => {
+      console.log("successed!")
+    })
   }
 
   return (
