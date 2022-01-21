@@ -14,11 +14,11 @@ const App = () => {
   const loginBtnProps = useSpring({
     borderBottom: registrationFormStatus 
       ? "solid 0px transparent"
-      : "solid 4px #936a84",  
+      : "solid 4px #40e0d0",  
   });
   const registerBtnProps = useSpring({
     borderBottom: registrationFormStatus
-      ? "solid 4px #936a84"
+      ? "solid 4px #40e0d0"
       : "solid 0px transparent", 
   });
 
@@ -38,7 +38,7 @@ const App = () => {
           style={loginBtnProps}
         >
           Login
-        </animated.button>
+        </animated.button>;
         <animated.button
           onClick={registerClicked}
           id="registerBtn"

@@ -1,6 +1,7 @@
 /* Reset styles */
 :root {
-    --c1 : #9c6c81;
+    /* --c1 : #9c6c81; */
+    --c1:#40e0d0;
 }
 
 html,body, body * { 
@@ -17,8 +18,27 @@ html,body, body * {
  body {
     background-size:  cover;
     background-position:center center;
+    background: url("../img/3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-height: 100vh;
+
+    
     
   }
+  body::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: .6;
+    content: "";
+    z-index: -1;
+
+  }
+
   .container {
       width: 100%;
       padding-top: 60px;
@@ -35,36 +55,33 @@ html,body, body * {
       padding:0 2em;
       border-radius: 5px;
       box-shadow: 0px 2px 7px rgba(0,0,0,0.2);
-      overflow: hidden; 
-      color:#ffffff;
+      overflow: hidden;  
       /* background-color: #eee; */
+      backdrop-filter: blur( 12px );    
+      -webkit-backdrop-filter: blur( 12px );
+      border-radius: 10px;
+      border: 1px solid rgba( 255, 255, 255, 0.18 ); 
+      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   }
   
+  
   .login-register-wrapper::after {
-      /* content: ; */
-      /* background-image: url(../img/bg1.png) 0.3;
-      background-size: cover;
-      position: relative;
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
-      opacity: 0.75; */
-
-        position: absolute;
+        /* position: absolute;
         top: 0;
         left: 0;
         bottom: 0;
-        right: 0;
-        background: url("../img/bg1.png");
-        opacity: .3;
+        right: 0; */
+        /* background: url("../img/bg1.png"); */
+        /* opacity: .3;
         content: "";
         z-index: -1;
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: bottom;
-      
-  }
+        background-position: bottom; */
+
+        
+        
+    }
   /* Nav buttons */
   .nav-buttons {
     width: 100%;
@@ -109,10 +126,12 @@ html,body, body * {
         border-radius: 5px;
         margin-bottom: 20px;
         background: rgba(255,255,255,.5);
-        
     }
     .form-group label {
       text-transform: capitalize;
+      text-shadow: .45px .25px #333;
+      ;
+
       
       
     }
@@ -128,7 +147,7 @@ html,body, body * {
         border: none;
         border-radius: 5px;
         margin-top: 23px;
-        background-color: #936a84;
+        background-color: var(--c1);
         cursor: pointer;
     
     }
@@ -152,17 +171,20 @@ html,body, body * {
         transition: all .5s ease;
         text-transform: uppercase;
         font-weight: bolder;
-        color: #936a84;
+        color:  var(--c1);
+        text-shadow: .34px .67px #333;
+
 
     }
 
     .forgot-panel a{
-        color: #765872;
+        color:  var(--c1);
         cursor: pointer;
+        text-shadow: .34px .67px #333;
     }
 
     #loginform label, #registerform label {
-        color: #765872;
+        color: var(--c1);
     }
     
 
