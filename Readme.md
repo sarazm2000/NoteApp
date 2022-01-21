@@ -7,5 +7,5 @@ Web-HW3
 |:----------:|
 |*Sara Zahedi*|
 |*Sina Elahimanesh*|
-|*Darioush Amiri*|
+|*Dariush Amiri*|
 |*Sania Safari*|
